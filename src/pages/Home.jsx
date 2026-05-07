@@ -4,8 +4,8 @@ const Home = () => {
   // const icon
   // height: "calc(100vh-80px)"
   return (
-    <div className="w-screen h-full lg:h-[calc(100vh-5rem)] mx-auto ">
-      <div className="w-[80%] h-[80%] mx-auto flex flex-col md:flex-row  ">
+    <div id="home" className=" w-full h-[calc(100vh-80px)] mx-auto ">
+      <div className="w-[80%] h-[80%] mx-auto flex flex-col md:flex-row  items-center justify-center ">
         {/* left-div */}
         <div className="flex-1 space-y-4 self-center">
           <div className="text-[#7c3aed] text-lg font-semibold">
@@ -36,7 +36,7 @@ const Home = () => {
           />
         </div>
       </div>
-      {/* absolute w-[350px] h-[350px] bg-purple-600/30 blur-[120px] rounded-full */}
+
       {/* Items */}
       <div className="h-[20%] flex flex-col  space-y-4">
         <div className="text-center text-[#94a3b8]">Trusted Technolgies</div>

@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Project = () => {
   return (
-    <div>Project</div>
-  )
-}
+    <div id="project" className="h-screen">
+      <h1>Projects Section</h1>
+    </div>
+  );
+};
 
-export default Project
+export default Project;
