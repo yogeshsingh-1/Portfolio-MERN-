@@ -29,10 +29,10 @@ const Navbar = () => {
 
   const navigate = useNavigate();
   return (
-    <nav className="flex justify-between items-center pl-15 pr-9 h-20 ">
+    <nav className="flex justify-between items-center pl-15 pr-9 h-20  ">
       <div className=" cursor-pointer font-semibold text-xl"> Portoli</div>
 
-      <div className="flex gap-9">
+      <div className=" gap-9 hidden lg:flex">
         {navItems.map((item, id) => (
           <div
             key={id}
