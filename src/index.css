@@ -1,1 +1,17 @@
 @import "tailwindcss";
+:root {
+  --bg: #050816;
+  --card: #0b1120;
+  --primary: #7c3aed;
+  --secondary: #9333ea;
+  --blue: #2563eb;
+  --cyan: #06b6d4;
+  --text: #f8fafc;
+  --muted: #94a3b8;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Google Sans Flex", sans-serif;
+}

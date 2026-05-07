@@ -1,8 +1,8 @@
-import React from 'react'
-
+import AppRoutes from "./routes/AppRoutes.jsx";
+import { RouterProvider } from "react-router-dom";
 const App = () => {
   return (
-    <div>App</div>
+     <RouterProvider router={AppRoutes} />
   )
 }
 
