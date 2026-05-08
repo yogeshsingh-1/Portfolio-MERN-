@@ -4,14 +4,14 @@ const Home = () => {
   // const icon
   // height: "calc(100vh-80px)"
   return (
-    <div id="home" className=" w-full h-[calc(100vh-80px)] mx-auto ">
+    <div id="home" className="w-full h-screen mx-auto pt-18 ">
       <div className="w-[80%] h-[80%] mx-auto flex flex-col md:flex-row  items-center justify-center ">
         {/* left-div */}
         <div className="flex-1 space-y-4 self-center">
           <div className="text-[#7c3aed] text-lg font-semibold">
             MERN STACK DEVELOPER
           </div>
-          <div className="leading-14  text-5xl font-[600]">
+          <div className="leading-14  text-5xl font-semibold">
             Hi, I'm Yogesh Singh <br />I build scalable <br />
             <span className="text-[#7c3aed]">web applications</span>
           </div>
@@ -38,33 +38,36 @@ const Home = () => {
       </div>
 
       {/* Items */}
-      <div className="h-[20%] flex flex-col  space-y-4">
+      <div className="h-[20%] flex flex-col  space-y-4 ">
         <div className="text-center text-[#94a3b8]">Trusted Technolgies</div>
         {/* Icons child*/}
         <div className="flex justify-center space-x-10">
           <div className="flex items-center space-x-2">
-            {Icon.Mongo} <span>MongoDB</span>
+            <i className={`${Icon.Mongo} text-3xl`}></i>
+            <span>MongoDB</span>
           </div>
           <div className="flex items-center space-x-2">
-            {Icon.Express} <span>Express.js</span>
+            <i className={`${Icon.Express} text-3xl`}></i>
+            <span>Express.js</span>
           </div>
           <div className="flex items-center space-x-2">
-            {Icon.React}
+            <i className={`${Icon.React} text-3xl`}></i>
             <span>React</span>
           </div>
           <div className="flex items-center space-x-2">
-            {Icon.Node} <span>Node.js</span>
+            <i className={`${Icon.Node} text-3xl`}></i>
+            <span>Node.js</span>
           </div>
           <div className="flex items-center space-x-2">
-            {Icon.Docker}
+            <i className={`${Icon.Docker} text-3xl`}></i>
             <span>Docker</span>
           </div>
           <div className="flex items-center space-x-2 ">
-            {Icon.Git}
+            <i className={`${Icon.Git} text-3xl`}></i>
             <span>Git</span>
           </div>
           <div className="flex items-center space-x-2 ">
-            {Icon.GitAction}
+            <i className={`${Icon.GitAction} text-3xl`}></i>
             <span className="text-sm">GitHub Actions</span>
           </div>
         </div>

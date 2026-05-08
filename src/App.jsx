@@ -5,22 +5,16 @@ import Project from "./pages/Project";
 import Skill from "./pages/Skill";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
-
+import { RouterProvider } from "react-router-dom";
 const App = () => {
   return (
     <main className="">
       <Navbar />
-
       <Home />
-
-      <About />
-
       <Project />
-
       <Skill />
-
-      <Blog />
-
+      {/* <Blog /> */}
+      <About />
       <Contact />
     </main>
   );
