@@ -38,7 +38,7 @@ const Skill = () => {
     ],
   };
   return (
-    <div id="skill" className="h-screen pt-18 max-w-[80%] w-full mx-auto bg-red-400">
+    <div id="skill" className="h-screen pt-18 max-w-[80%] w-full mx-auto ">
       <h1 className="text-[1.375rem] font-semibold  text-center tracking-wide">
         My Skills
       </h1>
