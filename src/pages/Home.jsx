@@ -1,8 +1,7 @@
 import Icon from "../assets/Icon";
 import home from "../assets/home.png";
+
 const Home = () => {
-  // const icon
-  // height: "calc(100vh-80px)"
   return (
     <div id="home" className="w-full h-screen mx-auto pt-18 ">
       <div className="w-[80%] h-[80%] mx-auto flex flex-col md:flex-row  items-center justify-center ">
@@ -20,12 +19,18 @@ const Home = () => {
             web application.
           </div>
           <div className="flex space-x-3">
-            <button className="bg-gradient-to-r from-indigo-600 to-purple-600 px-3 py-2 rounded-lg text-sm font-semibold">
+            <a
+              className="bg-linear-to-r from-indigo-600 to-purple-600 px-3 py-2 rounded-lg text-sm font-semibold"
+              href="#project"
+            >
               View My Work
-            </button>
-            <button className="border px-3 py-2 rounded-lg text-sm font-semibold">
+            </a>
+            <a
+              className="border px-3 py-2 rounded-lg text-sm font-semibold"
+              href="#contact"
+            >
               Contact Me
-            </button>
+            </a>
           </div>
         </div>
         {/* right-div */}

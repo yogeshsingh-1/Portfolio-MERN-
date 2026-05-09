@@ -20,40 +20,53 @@ const Skill = () => {
     ],
 
     Devops: [
+      { icon: Icon.Linux, name: "Linux" },
       { icon: Icon.Docker, name: "Docker" },
       { icon: Icon.Git, name: "Git" },
       { icon: Icon.GitHub, name: "GitHub" },
       { icon: Icon.GitAction, name: "GitHub Actions" },
       { icon: Icon.Nginx, name: "Nginx" },
-      { icon: Icon.Postman, name: "Postman" },
+
+      // { icon: Icon.Postman, name: "Postman" },
     ],
 
-    Other: [
-      { icon: Icon.VS, name: "VS Code" },
-      { icon: Icon.Linux, name: "Linux" },
-      { icon: Icon.PM2, name: "PM2" },
-      { icon: Icon.Sequelize, name: "Sequelize" },
-      { icon: Icon.Dbeaver, name: "DBeaver" },
-      { icon: Icon.NPM, name: "NPM" },
-    ],
+    // Other: [
+    //   { icon: Icon.VS, name: "VS Code" },
+    //   { icon: Icon.Linux, name: "Linux" },
+    //   { icon: Icon.PM2, name: "PM2" },
+    //   { icon: Icon.Sequelize, name: "Sequelize" },
+    //   { icon: Icon.Dbeaver, name: "DBeaver" },
+    //   { icon: Icon.NPM, name: "NPM" },
+    // ],
   };
   return (
-    <div id="skill" className="h-screen pt-18 max-w-[80%] w-full mx-auto ">
+    <div id="skill" className="h-screen pt-18 max-w-[90%] w-full mx-auto">
       <h1 className="text-[1.375rem] font-semibold  text-center tracking-wide">
         My Skills
       </h1>
       <div className="w-full h-full space-y-2 ">
         {Object.keys(skill).map((item) => (
-          <div className=" max-w-[80%] w-full mx-auto ">
+          <div className="max-w-[80%] w-full mx-auto">
             <h2 className="font-semibold">{item}</h2>
-            <div className="flex justify-around bg-[#0b112090] py-3.5 rounded-lg shadow-xl ">
+            <div className="flex justify-around bg-[#0b112090] py-3.5 rounded-lg shadow-xl flex-wrap ">
               {skill[item].map((item, index) => (
                 <div
-                  className="flex flex-col space-y-2 items-center"
+                  className="group flex flex-col items-center gap-2 cursor-pointer p-4 rounded-xl"
                   key={index}
                 >
-                  <i className={`${item.icon} text-4xl`}></i>
-                  <span className="text-sm">{item.name}</span>
+                  <i
+                    className={`
+      ${item.icon}
+      text-4xl
+      transition-all duration-300
+      group-hover:-translate-y-2
+      group-hover:scale-110
+      group-hover:text-cyan-500
+   
+    `}
+                  ></i>
+
+                  <span className="text-sm opacity-80 ">{item.name}</span>
                 </div>
               ))}
             </div>

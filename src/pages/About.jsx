@@ -26,7 +26,7 @@ const About = () => {
       <h1 className="text-[1.375rem] font-semibold  text-center tracking-wide ">
         About Me
       </h1>
-      <div className="flex h-[90%] gap-30  items-center">
+      <div className="flex h-[90%] gap-30  ">
         {/* left div */}
         <div className="flex-1 px-8 pt-5 space-y-5 ">
           <div className="text-md font-thiner opacity-80">
@@ -54,9 +54,9 @@ const About = () => {
               </div>
             ))}
           </div>
-          <div className="bg-gradient-to-r from-indigo-600 to-purple-600 px-6 py-2.5 rounded-lg text-sm font-semibold w-fit ">
+          {/* <div className="bg-gradient-to-r from-indigo-600 to-purple-600 px-6 py-2.5 rounded-lg text-sm font-semibold w-fit ">
             <button>Download CV</button>
-          </div>
+          </div> */}
         </div>
         {/* right div*/}
         <div className="flex-1 h-[90%] pt-5 shadow-lg transform drop-shadow-[0_0_40px_rgba(124,58,237,0.3)] ">

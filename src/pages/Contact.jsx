@@ -2,14 +2,20 @@ import React, { useState } from "react";
 import { Turnstile } from "@marsidev/react-turnstile";
 import axios from "axios";
 const Contact = () => {
-  const url = "http://localhost:8001/auth/cap";
+  const url = "http://localhost:8001/auth/password/change";
   const siteKey = "0x4AAAAAADLZem59QbuIqDTx";
   const [token, setToken] = useState("");
   const handleSubmit = async (e) => {
     try {
       e.preventDefault();
       const res = await axios.post(url, {
-        token: token,
+        Token: token,
+        // UserName: "cool_sharma12",
+        // Password: "12345",
+        Name: "abhishek sharma1",
+        UserId: "ksingher860@gmail.com",
+        Mobile: "9863402018",
+        Password: "123456",
       });
       console.log(res.data);
     } catch (E) {

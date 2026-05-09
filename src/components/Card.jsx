@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Card = () => {
   return (
     <div className="flex w-[48%] rounded-md overflow-hidden p-2 bg-[#0b1120] ">
@@ -8,9 +10,9 @@ const Card = () => {
         />
       </div>
 
-      <div className="flex-1 px-5 space-y-4  pt-3 ">
-        <div className="text-lg font-semibold">E-Commerce Web App</div>
-        <div className="text-sm opacity-50 tracking-wide">
+      <div className="flex-1 px-5 space-y-3  pt-3 ">
+        <div className="text-md font-semibold">E-Commerce Web App</div>
+        <div className="text-xs opacity-50 tracking-wider">
           A full featured ecommerce frontend platform with full user interface
           and ui development of ecommerce.
         </div>
@@ -25,9 +27,17 @@ const Card = () => {
             GitHub
           </button>
         </div>
-        <div className="flex gap-3">
-          <button className="text-[#7c3aed] font-semibold">Live Demo</button>
-          <button className="text-[#94a3b8] font-semibold">GitHub</button>
+        <div className="flex gap-8 text-sm mt-5">
+          <Link className=" text-[#7c3aed] font-semibold  " to="">
+            <i class="ri-external-link-line mr-2"></i>Live Demo
+          </Link>
+          <Link
+            className=" text-[#94a3b8] font-semibold"
+            to="https://github.com/yogeshsingh-1"
+            target="_blank"
+          >
+            <i class="ri-github-fill mr-2"></i> GitHub
+          </Link>
         </div>
       </div>
     </div>
