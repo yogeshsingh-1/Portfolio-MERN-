@@ -22,11 +22,11 @@ const About = () => {
   };
 
   return (
-    <div id="about" className="h-screen pt-18 max-w-[80%] w-full mx-auto">
+    <div id="about" className="min-h-screen pt-18 max-w-[80%] w-full mx-auto ">
       <h1 className="text-[1.375rem] font-semibold  text-center tracking-wide ">
         About Me
       </h1>
-      <div className="flex h-[90%] gap-30  ">
+      <div className="flex flex-col md:flex-row h-[80%] md:gap-30  ">
         {/* left div */}
         <div className="flex-1 px-8 pt-5 space-y-5 ">
           <div className="text-md font-thiner opacity-80">
@@ -59,7 +59,7 @@ const About = () => {
           </div> */}
         </div>
         {/* right div*/}
-        <div className="flex-1 h-[90%] pt-5 shadow-lg transform drop-shadow-[0_0_40px_rgba(124,58,237,0.3)] ">
+        <div className="flex-1 min-h-[90%] pt-5 shadow-lg transform drop-shadow-[0_0_40px_rgba(124,58,237,0.3)] ">
           <img
             className="w-full h-full rounded-md  mx-auto  hover:scale-105 duration-500 object-cover"
             src={about}

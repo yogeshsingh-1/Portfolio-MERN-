@@ -45,11 +45,11 @@ const Contact = () => {
     ],
   };
   return (
-    <div id="contact" className="h-screen pt-18 max-w-[80%] w-full mx-auto">
+    <div id="contact" className="min-h-screen pt-18 max-w-[80%] w-full mx-auto ">
       <h1 className="text-[1.375rem] font-semibold  text-center tracking-wide ">
         Contact Me
       </h1>
-      <div className="flex h-[90%] ">
+      <div className="flex flex-col md:flex-row h-[90%] ">
         {/* left div */}
         <div className="flex-1 px-8 pt-10 space-y-4 ">
           <h2 className="text-lg font-semibold">Lets work together!</h2>

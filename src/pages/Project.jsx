@@ -4,13 +4,16 @@ const Project = () => {
   const projectList = [1, 2, 3, 4];
 
   return (
-    <div id="project" className="h-screen pt-18 max-w-[80%] w-full mx-auto">
+    <div
+      id="project"
+      className="pt-18 max-w-[80%] w-full mx-auto  min-h-screen"
+    >
       <h1 className="text-[1.375rem] font-semibold  text-center tracking-wide ">
         My Projects
       </h1>
-      <div className="flex gap-4 flex-wrap h-[90%] w-full pt-5 ">
+      <div className="flex gap-4 flex-wrap min-h-[90%] w-full pt-5 ">
         {projectList.map((project, index) => (
-          <Card  key={index}/>
+          <Card key={index} />
         ))}
       </div>
     </div>

@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const Card = () => {
   return (
-    <div className="flex w-[48%] rounded-md overflow-hidden p-2 bg-[#0b1120] ">
-      <div className="w-[35%] h-[90%]">
+    <div className="flex w-full md:w-[48%] rounded-md overflow-hidden p-2 bg-[#0b1120] ">
+      <div className="w-[35%] h-[90%] hidden md:block">
         <img
           src="https://plus.unsplash.com/premium_photo-1685086785636-2a1a0e5b591f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGV2ZWxvcGVyfGVufDB8fDB8fHww"
           className="w-full h-full object-cover rounded-md"

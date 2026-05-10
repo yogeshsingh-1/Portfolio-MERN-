@@ -3,7 +3,6 @@
 https://www.svgrepo.com/?utm_source=chatgpt.com
 https://devicon.dev/?utm_source=chatgpt.com
 
-
 npm install @marsidev/react-turnstile
 0 = 5
 src/
@@ -53,3 +52,95 @@ src/
 | Cyan Accent     | Cyan          | `#06B6D4` |
 | Text White      | Soft White    | `#F8FAFC` |
 | Secondary Text  | Gray          | `#94A3B8` |
+
+<!-- Mobile UI ko correctly approach kaise kare -->
+
+1 . Pehle mobile design soch
+Instead:
+
+Mobile UI first banao
+Fir tablet
+Fir desktop
+
+This is called:
+
+Mobile First Design
+
+Mobile me space bahut limited hoti hai
+
+Desktop:
+
+horizontal space zyada
+
+Mobile:
+
+vertical scrolling natural hota hai
+
+Isliye mobile me:
+
+items stack karo
+columns avoid karo
+spacing simple rakho
+
+Bad mobile approach:
+display: flex;
+justify-content: space-between;
+
+Better:
+flex-direction: column;
+gap: 1rem;
+
+Mobile layout ka basic formula
+
+Most mobile screens follow:
+
+# f(x)=vertical stacking for mobile layouts
+
+Meaning:
+
+vertical flow
+full width sections
+less side-by-side content
+
+5. Fixed width mat use karo
+
+Ye mobile tod deta hai.
+
+Bad:
+width: 1200px;
+
+Good:
+width: 100%;
+max-width: 1200px;
+margin: auto;
+
+# Flexbox ko mobile-first use karo
+
+.container {
+display: flex;
+flex-direction: column;
+}
+
+for tailwind:
+
+<div className="
+  flex
+  flex-col
+  md:flex-row
+">
+
+<!-- Mobile UI me kya avoid kare -->
+
+❌ Large padding
+❌ 4-column layouts
+❌ Huge font sizes
+❌ Sidebars
+❌ Too many buttons in one row
+
+<!-- Best practice for cards -->
+
+Mobile:
+width: 100%;
+
+Desktop:
+width: 300px;
