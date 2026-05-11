@@ -31,17 +31,18 @@ const Navbar = () => {
     py-5
     flex flex-col
     px-10
-    backdrop-blur-md z-50 bg-[#050816]/80
+    backdrop-blur-md z-50 
     duration-300
-    transaction ease-in-out
+    transaction ease-in-out 
     "
-      onMouseLeave={() => setOpen(!open)}
+      onMouseLeave={() => setOpen(false)}
     >
+      {/* bg-[#050816]/80 */}
       <div className="w-full flex justify-between items-center">
         <div className=" cursor-pointer font-semibold flex gap-1.5 items-center">
           <span ref={icon}>{Icon.HTMX}</span>
-          <a href="#home" className="text-2xl">
-            Portoli
+          <a href="#home" className="text-xl">
+            CodeWithYogesh
           </a>
         </div>
 

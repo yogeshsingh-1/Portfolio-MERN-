@@ -45,7 +45,10 @@ const Contact = () => {
     ],
   };
   return (
-    <div id="contact" className="min-h-screen pt-18 max-w-[80%] w-full mx-auto ">
+    <div
+      id="contact"
+      className="min-h-screen pt-18 max-w-[80%] w-full mx-auto "
+    >
       <h1 className="text-[1.375rem] font-semibold  text-center tracking-wide ">
         Contact Me
       </h1>
@@ -54,14 +57,14 @@ const Contact = () => {
         <div className="flex-1 px-8 pt-10 space-y-4 ">
           <h2 className="text-lg font-semibold">Lets work together!</h2>
           <div className="text-sm font-thiner opacity-60">
-            Hava a project in mind or want to discuss an opportunity? Feel free
+            Have a project in mind or want to discuss an opportunity? Feel free
             to react out.
           </div>
           <div className="space-y-4">
             {/* item */}
             {Object.keys(userDetails).map((userDetail, index) => (
               <div className="flex space-x-3" key={index}>
-                <div className="size-9 shadow-md text-center rounded-md bg-gradient-to-r from-indigo-600/10 to-purple-600/10">
+                <div className="size-9 shadow-md text-center rounded-md bg-linear-to-r from-indigo-600/10 to-purple-600/10">
                   <i className={`${userDetails[userDetail][1]} text-2xl`}></i>
                 </div>
                 <div className="flex flex-col font-semibold">
@@ -114,7 +117,7 @@ const Contact = () => {
             <div className="">
               <button
                 type="submit"
-                className="bg-gradient-to-r from-indigo-600 to-purple-600 py-2.5 rounded-lg text-md font-semibold w-full "
+                className="bg-linear-to-r from-indigo-600 to-purple-600 py-2.5 rounded-lg text-md font-semibold w-full "
               >
                 Send Message
               </button>
