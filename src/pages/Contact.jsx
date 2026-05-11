@@ -40,7 +40,7 @@ const Contact = () => {
       "ri-github-fill bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent",
     ],
     Linkedin: [
-      "https://github.com/yogeshsingh-1",
+      "https://www.linkedin.com/in/yogesh-singh-02a01122a",
       "ri-linkedin-box-fill bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent",
     ],
   };
