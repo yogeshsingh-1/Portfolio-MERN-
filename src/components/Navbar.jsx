@@ -36,7 +36,7 @@ const Navbar = () => {
     transaction ease-in-out 
     "
       onMouseLeave={() => setOpen(false)}
-      onTouchMove={() => setOpen(!open)}
+      onTouchMove={() => setOpen(false)}
     >
       {/* bg-[#050816]/80 */}
       <div className="w-full flex justify-between items-center">
