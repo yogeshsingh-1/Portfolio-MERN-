@@ -46,7 +46,11 @@ const Navbar = () => {
           </a>
         </div>
 
-        <div className="md:hidden" onClick={() => setOpen(!open)}>
+        <div
+          className="md:hidden"
+          onClick={() => setOpen(!open)}
+          onTouchMove={() => setOpen(!open)}
+        >
           {!open ? <i class="ri-menu-line"></i> : <i class="ri-close-line"></i>}
         </div>
 
