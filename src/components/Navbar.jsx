@@ -36,6 +36,7 @@ const Navbar = () => {
     transaction ease-in-out 
     "
       onMouseLeave={() => setOpen(false)}
+      onTouchMove={() => setOpen(!open)}
     >
       {/* bg-[#050816]/80 */}
       <div className="w-full flex justify-between items-center">
@@ -46,11 +47,7 @@ const Navbar = () => {
           </a>
         </div>
 
-        <div
-          className="md:hidden"
-          onClick={() => setOpen(!open)}
-          onTouchMove={() => setOpen(!open)}
-        >
+        <div className="md:hidden" onClick={() => setOpen(!open)}>
           {!open ? <i class="ri-menu-line"></i> : <i class="ri-close-line"></i>}
         </div>
 
