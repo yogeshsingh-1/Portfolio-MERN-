@@ -1,7 +1,7 @@
 <!-- Icon -->
 
-https://www.svgrepo.com/?utm_source=chatgpt.com
-https://devicon.dev/?utm_source=chatgpt.com
+https://www.svgrepo.com
+https://devicon.dev
 
 npm install @marsidev/react-turnstile
 0 = 5
