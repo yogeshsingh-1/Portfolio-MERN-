@@ -44,14 +44,16 @@ const Skill = () => {
       <h1 className="text-[1.375rem] font-semibold  text-center tracking-wide">
         My Skills
       </h1>
+      {/* bg-[#0b112090] */}
       <div className="w-full h-full space-y-2 ">
         {Object.keys(skill).map((item) => (
-          <div className="max-w-[80%] w-full mx-auto">
+          <div className="max-w-[80%] w-full mx-auto ">
             <h2 className="font-semibold">{item}</h2>
-            <div className="flex justify-around bg-[#0b112090] py-3.5 rounded-lg shadow-xl flex-wrap ">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4  py-3.5 rounded-lg shadow-xl flex-wrap bg-[#0b112090]">
               {skill[item].map((item, index) => (
                 <div
-                  className="group flex flex-col items-center gap-2 cursor-pointer p-4 rounded-xl"
+                  className="group flex flex-col items-center  gap-2 cursor-pointer p-4 rounded-xl 
+                  w-full max-w-28"
                   key={index}
                 >
                   <i
@@ -61,12 +63,13 @@ const Skill = () => {
       transition-all duration-300
       group-hover:-translate-y-2
       group-hover:scale-110
-      group-hover:text-cyan-500
-   
+      group-hover:text-cyan-500 
     `}
                   ></i>
 
-                  <span className="text-sm opacity-80 ">{item.name}</span>
+                  <span className="text-sm opacity-80 text-center">
+                    {item.name}
+                  </span>
                 </div>
               ))}
             </div>

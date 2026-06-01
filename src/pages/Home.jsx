@@ -38,6 +38,7 @@ const Home = () => {
           <img
             src={home}
             className="w-full h-full transform drop-shadow-[0_0_40px_rgba(124,58,237,0.5)] hover:scale-105 duration-500 object-contain"
+            loading="lazy"
           />
         </div>
       </div>
